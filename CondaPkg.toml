@@ -2,5 +2,6 @@ channels = ["conda-forge"]
 
 [deps]
 eigen = ""
+xtensor = ""
 xeus-cling = ""
 jupyterlab = ""
