@@ -1,5 +1,6 @@
 channels = ["conda-forge"]
 
 [deps]
+eigen = ""
 xeus-cling = ""
 jupyterlab = ""
