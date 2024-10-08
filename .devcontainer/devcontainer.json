@@ -38,7 +38,7 @@
 	"forwardPorts": [1234, 8000, 8080, 8888],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "julia script/postcreatecommand.jl",
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install tig && julia script/postcreatecommand.jl",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
