@@ -4,5 +4,5 @@ Pkg.activate(dirname(@__DIR__))
 using CondaPkg
 
 CondaPkg.withenv() do
-    run(`jupyter lab`)
+    run(`jupyter lab --NotebookApp.token=""`)
 end
