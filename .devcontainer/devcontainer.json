@@ -5,6 +5,9 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
+	    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+			"packages": "nano,git,tig,openssh-server"
+		},
 		"ghcr.io/julialang/devcontainer-features/julia:1": {
 			"channel": "release"
 		},
@@ -38,7 +41,7 @@
 	"forwardPorts": [1234, 8000, 8080, 8888],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo apt-get update && sudo apt-get install tig && julia script/postcreatecommand.jl",
+	"postCreateCommand": "julia script/postcreatecommand.jl",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
